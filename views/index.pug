@@ -1,0 +1,66 @@
+//- index.pug
+doctype html
+html
+  head
+    title= title 
+    style
+      include ../static/style.css
+  body
+    nav#navbar
+        div#logo 
+          img(src="./static/logo-dance.png")
+          p #[span(class="dan") Dan]#[span(class="ce") ce] #[span(class="ac") Ac]#[span(class="ade") ade]#[span(class="my") my]
+        ul 
+            li #[a(href = "/home") Home]
+            li #[a(href = "/about") About]
+            li #[a(href = "/Services") Services]
+            li #[a(href = "/Contact") Contact Us]
+            li #[a(href = "#") Class Info]
+
+    section#introSection
+        h1 Welcome to #[span(class="dan") Dan]#[span(class="ce") ce] #[span(class="ac") Ac]#[span(class="ade") ade]#[span(class="my") my]
+        h2 Eat Sleep Dance Repeat..
+        p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis eius, aliquam ullam laborum quos
+        p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis 
+
+    section#missionSection
+        h1 Our Mission 
+        div#card-container
+          div.card
+            img(src="./static/card-image2.png")
+            h2 lorem ipsum 
+            p Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus in molestiae inventore impedit sed maiores? Molestias est cumque veniam numquam.
+          div.card
+            img(src="./static/card-image3.png")
+            h2 lorem ipsum 
+            p Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus in molestiae inventore impedit sed maiores? Molestias est cumque veniam numquam.
+          div.card
+            img(src="./static/card-image4.png")
+            h2 lorem ipsum 
+            p Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus in molestiae inventore impedit sed maiores? Molestias est cumque veniam numquam.
+
+
+    section#clients-section
+      h1 Sponsers
+      div.client-cont
+        div#client-1 #[img(src="./static/Dominos-logo.png")]
+        div#client-2 #[img(src="./static/KFC-logo.png")]
+        div#client-3 #[img(src="./static/Swiggy-logo.png")]
+        div#client-4 #[img(src="./static/BurgerKing-logo.png")]
+        div#client-6 #[img(src="./static/UberEats-logo.png")]
+        div#client-5 #[img(src="./static/Zomato-logo.png")]
+        
+      
+    
+
+    footer
+      a(href="#") FAQs
+      a(href="/contact") Contact Us
+      a(href="#") Terms of Use
+      a(href="#") Privacy Policy
+      a(href="#") Refund Policy
+      a(href="#") &COPY; 2020 | Dance Academy
+        
+    
+    script
+      include ../static/index.js

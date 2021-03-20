@@ -1,0 +1,39 @@
+extends base.pug
+
+block style 
+    style
+        include ../static/style.css
+        include ../static/contactStyle.css
+        
+
+block content
+    Section#introSection
+        h1 This is our Contact Page.
+        
+    
+    section#missionSection
+        h1 Contact Form
+        div#container 
+            div#form-container
+                form(action="" method="post" id="contact-form") 
+
+                    p Name: #[input(type="text" name="name" placeholder="Enter your name")]
+                    p Age: #[input(type="number" name="age" placeholder="Enter your age")]
+                    p Gender:  
+                        select(name="gender" id="gender") 
+                            option(value="-") --select your gender--
+                            option(value="male") Male
+                            option(value="female") Female
+                            option(value="others") Others
+                    p Email: #[input(type="email" name="email" placeholder="Enter your email")]
+                    p Mob. No: #[input(type="number" name="mobile" placeholder="Enter your mobile number")]
+                    p Location:  
+                        select(name="location" id="location") 
+                            option(value="-") --select your location--
+                            option(value="Delhi") Delhi
+                            option(value="Pune") Pune
+                            option(value="Banglore") Banglore
+                            option(value="Kolkata") Kolkata
+                            option(value="Hyderabad") Hyderabad
+                    p Full Address: #[textarea(name="address" id="address" cols="60" rows="3" placeholder="Enter your address")]
+                    p #[button Submit]
